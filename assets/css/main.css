@@ -78,6 +78,7 @@ a {
   background-color: var(--accent);
   padding: 0.4rem;
   border-radius: 10px;
+  box-shadow: 2px 2px 8px #aaa;
 }
 
 /* header */
@@ -153,6 +154,7 @@ header a.button {
   margin-top: 2rem;
   padding: 2rem;
   height: 300px;
+  box-shadow: 3px 3px 8px #aaa;
 }
 
 .service_card h3 {
