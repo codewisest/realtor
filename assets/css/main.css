@@ -5,12 +5,13 @@
   --primary_varaint: #0307a3;
   --secondary_color: #0207dc;
   --on_primary: rgb(250, 250, 250);
+  --grey: #eee;
   --on_background: rgb(66, 66, 66);
   --on_background_alt: rgba(66, 66, 66, 0.7);
   --background: rgb(255, 255, 255);
   --box_shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
   --glow_shadow: 0px 1px 2px rgba(79, 183, 220, 0.8);
-  --accent: #015896;
+  --accent: #1672b4;
   --tint_start: rgba(0, 0, 0, 0.7);
   --tint_end: rgba(0, 0, 0, 0.9);
 }
@@ -73,6 +74,12 @@ a {
   color: var(--on_primary);
 }
 
+.button {
+  background-color: var(--accent);
+  padding: 0.4rem;
+  border-radius: 10px;
+}
+
 /* header */
 header {
   color: var(--on_primary);
@@ -113,35 +120,11 @@ h1 > span:last-child {
   margin-top: 10px;
 }
 
-.header_main ul {
-  margin: 50px 0;
-}
-
-.header_main li {
-  line-height: 2rem;
-  letter-spacing: 2px;
-  font-weight: bold;
-  font-size: 1.1rem;
-}
-
 header a.button {
   border: 1px solid var(--on_primary);
   border-radius: 5px;
   padding: 0.5rem;
   margin-right: 6em;
-}
-
-.link_group {
-  margin-top: 2rem;
-}
-
-.header_main a:first-child {
-  background-color: var(--accent);
-}
-
-.header_main a:hover {
-  background-color: var(--background);
-  color: var(--accent);
 }
 
 .header_main img {
@@ -150,6 +133,37 @@ header a.button {
   top: 5em;
 }
 
+/* services */
+.services {
+  padding: 4rem 1rem;
+  text-align: center;
+  background-color: var(--grey);
+}
+
+.services h2 {
+  margin-bottom: 1rem;
+}
+
+.services_cards {
+  margin-top: 2rem;
+}
+
+.service_card {
+  background-color: var(--on_primary);
+  margin-top: 2rem;
+  padding: 2rem;
+  height: 300px;
+}
+
+.service_card h3 {
+  margin: 1rem;
+}
+
+.service_card a {
+  display: block;
+  margin: 0.5rem auto;
+  width: 100px;
+}
 /* footer */
 footer > .container {
   padding: 1rem;
